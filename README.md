@@ -1,6 +1,9 @@
 # spree_nice_admin
 This extension adds a responsive menu to the Spree 3.7 admin, plus makes it look nicer.
 
+## Changes to database
+None
+
 ## Changes to the admin html.erb files
 Addes order currency to orders in list view and also adds order currency to the order details page in the summery section. Moves the order number to the first column, and truncates the emails to give a more user friendly layout. 
 
