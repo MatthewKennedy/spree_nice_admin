@@ -3,6 +3,7 @@
 
 
 jQuery(function ($) {
+
       var wrapper = $('#wrapper')
       var main = $('#main-part')
       var sidebar = $('#main-sidebar')
@@ -20,6 +21,13 @@ jQuery(function ($) {
       // Sidebar nav toggle functionality
       $('#sidebar-toggle').on('click', function () {
 
+        // 1. Import the functions
+      const bodyScrollLock = require('body-scroll-lock');
+      const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+      const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+      // 2. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav).
+      const targetElement = document.querySelector("#main-sidebar");
+
         wrapper.toggleClass('sidebar-opened')
         sidebar.toggleClass('hidden-xs')
         wrapper.removeClass('sidebar-minimized')
@@ -28,12 +36,11 @@ jQuery(function ($) {
           .removeClass(mainWrapperExpandedClasses)
 
         if (wrapper.hasClass('sidebar-opened')) {
-          bodyScrollLock.disableBodyScroll(sidebar);
+          disableBodyScroll(targetElement);
           }
         else {
-          bodyScrollLock.enableBodyScroll(sidebar);
+          enableBodyScroll(targetElement);
           }
 
       })
-
 })
