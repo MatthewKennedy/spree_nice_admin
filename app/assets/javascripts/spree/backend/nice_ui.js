@@ -1,5 +1,3 @@
-
-
 jQuery(function ($) {
   var wrapper = $('#wrapper')
   var main = $('#main-part')
