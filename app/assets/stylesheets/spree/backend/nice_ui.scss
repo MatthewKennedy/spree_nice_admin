@@ -1,7 +1,12 @@
 $sidebar-width: 210px;
 
+
 img {
-  max-width: 100%
+  max-width: 100%;
+}
+
+td.image img {
+  max-width: 50px;
 }
 
 span#sidebar-toggle {
