@@ -19,12 +19,8 @@ jQuery(function ($) {
         .removeClass(mainWrapperExpandedClasses)
 
       // Sidebar nav toggle functionality
+      const targetElement = document.querySelector("#main-sidebar");
       $('#sidebar-toggle').on('click', function () {
-
-        // 1. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav).
-        const targetElement = document.querySelector("#main-sidebar");
-
-
         wrapper.toggleClass('sidebar-opened')
         sidebar.toggleClass('hidden-xs')
         wrapper.removeClass('sidebar-minimized')
