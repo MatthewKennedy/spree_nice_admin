@@ -1,6 +1,15 @@
 # spree_nice_admin
 
-Adds a responsive admin to spree, make it look nicer too.
+Adds a responsive menu the the Spree 3.7 admin, plus makes it look nicer.
+
+## Changes to the admin html.erb files
+Addes order currency to orders in list view and also adds order currency to the order details page in the summery section. Moves the order number to the first column, and truncates the emails to give a more user friendly layout. 
+
+## Changes to the JS files
+Removes the default Spree menu js that seems overkill for a simple on/off screenmenu, and then adds a toggle class for the menu onhandheld devices.
+
+## Changes to the CSS files
+Just simple styling, looks like a bit of a Shopify rip off, but hey that might change with further updates.
 
 ## Installation
 
