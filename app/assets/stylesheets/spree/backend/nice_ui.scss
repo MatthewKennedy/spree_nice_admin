@@ -1,0 +1,81 @@
+$sidebar-width: 210px;
+
+img {max-width: 100%}
+
+span#sidebar-toggle {
+display: none;
+
+}
+
+#sidebar-toggle {
+  width: 25px;
+}
+
+#main-sidebar {
+width:  $sidebar-width ;
+}
+
+
+#main-part {
+  padding-left: $sidebar-width + 35;
+}
+
+div#main-part, div#main-sidebar, body { background-color: #f9fafb;}
+div#content {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  overflow-x: scroll;
+}
+
+.navbar-inverse {
+  background-color: rgb(0, 8, 75);
+  border-color: rgb(0, 8, 75);
+}
+
+div#test p:first-child {text-decoration: underline;}
+div#test p:last-child {color: red;}
+
+table#listing_orders tr {
+  height: 48px;
+}
+
+div.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+}
+
+span.icon-filter{
+    display: inline;
+}
+
+@media (max-width: 767px) {
+
+  span#sidebar-toggle {
+  display: block;
+  left: 15px;
+  }
+
+  a.logo{
+  display: none;
+  }
+
+  .col-xs-3.sidebar { width: 100%;}
+  .navbar-right {display: none;}
+
+  div#main-sidebar {
+  width: 0 ;
+  display: none;
+  }
+
+  div.sidebar-opened div#main-sidebar {
+  display: block;
+  width:  100% ;
+  }
+
+
+  #main-part {
+    padding-left: 35px;
+  }
+}
