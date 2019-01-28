@@ -27,11 +27,12 @@ jQuery(function ($) {
           .removeClass(mainWrapperCollapsedClasses)
           .removeClass(mainWrapperExpandedClasses)
 
-          if (wrapper.hasClass('sidebar-opened')) {
+        if (wrapper.hasClass('sidebar-opened')) {
           bodyScrollLock.disableBodyScroll(sidebar);
-        } else {
+          }
+        else {
           bodyScrollLock.enableBodyScroll(sidebar);
-        }
+          }
 
       })
 
