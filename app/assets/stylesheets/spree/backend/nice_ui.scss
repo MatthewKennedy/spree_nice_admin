@@ -64,9 +64,13 @@ div.navbar-right {
       display: block;
       left: 15px;
       }
+      .navbar-header {
+        width: 100%
+      }
 
-      a.logo {
-      display: none;
+      a.logo.navbar-brand {
+        float: right;
+        padding: 5px 0;
       }
 
       .col-xs-3.sidebar { width: 100%;}
