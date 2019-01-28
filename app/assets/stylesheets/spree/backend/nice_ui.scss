@@ -8,10 +8,6 @@ span#sidebar-toggle {
   display: none;
 }
 
-span.icon-filter {
-  display: none;
-}
-
 #sidebar-toggle {
   width: 25px;
 }
@@ -86,9 +82,12 @@ span.icon-filter {
       width:  100% ;
       }
 
-
       #main-part {
         padding-left: 35px;
+      }
+
+      span.icon-filter {
+        display: none;
       }
 
 }
