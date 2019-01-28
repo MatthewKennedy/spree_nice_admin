@@ -8,7 +8,7 @@ None
 Addes order currency to orders in list view and also adds order currency to the order details page in the summery section. Moves the order number to the first column, and truncates the emails to give a more user friendly layout. 
 
 ## Changes to the JS files
-Removes the default Spree menu js that seems overkill for a simple on/off screenmenu, and then adds a toggle class for the menu onhandheld devices.
+Disables the default Spree menu class toggling on the main menu, and then adds a single toggle class for the menu for use onhand held devices.
 
 ## Changes to the CSS files
 Just simple styling, looks like a bit of a Shopify rip off, but hey that might change with further updates.
