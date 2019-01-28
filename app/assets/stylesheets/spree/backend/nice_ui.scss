@@ -15,6 +15,7 @@ span#sidebar-toggle {
 
 #main-sidebar {
   width:  $sidebar-width ;
+  overflow-y: scroll;
 }
 
 
@@ -89,7 +90,7 @@ div.navbar-right {
       div.sidebar-opened div#main-sidebar {
       display: block;
       width:  100% ;
-      overflow: scroll;
+      overflow-y: scroll;
       }
 
       #main-part {
