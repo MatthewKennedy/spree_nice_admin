@@ -28,9 +28,9 @@ jQuery(function ($) {
           .removeClass(mainWrapperExpandedClasses)
 
           if (wrapper.hasClass('sidebar-opened')) {
-          bodyScrollLock.disableBodyScroll(wrapper);
+          bodyScrollLock.disableBodyScroll(sidebar);
         } else {
-          bodyScrollLock.enableBodyScroll(wrapper);
+          bodyScrollLock.enableBodyScroll(sidebar);
         }
 
       })
