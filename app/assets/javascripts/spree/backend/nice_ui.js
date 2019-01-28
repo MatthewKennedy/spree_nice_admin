@@ -19,7 +19,7 @@ jQuery(function ($) {
         .removeClass(mainWrapperExpandedClasses)
 
       // Sidebar nav toggle functionality
-      const targetElement = document.querySelector("#main-sidebar");
+      var targetElement = document.querySelector("#main-sidebar");
       $('#sidebar-toggle').on('click', function () {
         wrapper.toggleClass('sidebar-opened')
         sidebar.toggleClass('hidden-xs')
