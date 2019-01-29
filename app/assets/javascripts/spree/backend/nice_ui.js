@@ -6,19 +6,11 @@
 //#### EVERYTHING BUT UP AGAINST LINE 0 CAN BE REMOVED IF PORTED INTO SPREE
     jQuery(function ($) {
 
-// THESE CAN BE REMOVED IF PROTED PROPERLY
-var wrapper = $('#wrapper')
-var main = $('#main-part')
-// THESE CAN BE REMOVED IF PROTED PROPERLY
-
-      // Set some variables
-      var sidebar = $('#main-sidebar')
-
 // Onpageload remove some unnecessary classes that get added from the default Spree js
 // IF PORTED INTO MAIN SPREE PROJECT STOP THIS OCCURING IN MAIN SPREE JS FILES AND REMOVE THESE CLASSES FROM ERB FILES THEN DELETE BERTWEEN THESE LINES
-sidebar.removeClass('hidden-xs col-xs-3 col-md-2 sidebar')
-main.removeClass('main col-xs-12 sidebar-collapsed col-xs-9 col-xs-offset-3 col-md-10 col-md-offset-2')
-wrapper.removeClass('sidebar-minimized')
+$('#main-sidebar').removeClass('hidden-xs col-xs-3 col-md-2 sidebar')
+$('#main-part').removeClass('main col-xs-12 sidebar-collapsed col-xs-9 col-xs-offset-3 col-md-10 col-md-offset-2')
+$('#wrapper').removeClass('sidebar-minimized')
 // IF PORTED INTO MAIN SPREE PROJECT STOP THIS OCCURING IN MAIN SPREE JS FILES AND REMOVE THESE CLASSES FROM ERB FILES THEN DELETE BERTWEEN THESE LINES
 
             $('#sidebar-toggle').on('click', function () {
@@ -28,17 +20,17 @@ wrapper.removeClass('sidebar-minimized')
 
               // Add body scroll lock when menu opened.
               if ($('body').hasClass('sidebar-opened')) {
-                bodyScrollLock.disableBodyScroll(sidebar);
+                bodyScrollLock.disableBodyScroll('#main-sidebar');
                 }
               else {
-                bodyScrollLock.enableBodyScroll(sidebar);
+                bodyScrollLock.enableBodyScroll('#main-sidebar');
                 }
 
 // Blocks (removeClass) of the default Spree classes from toggling on and off.
 // IF PORTED INTO MAIN SPREE PROJECT STOP THIS OCCURING IN MAIN SPREE JS FILES AND REMOVE THESE CLASSES FROM ERB FILES THEN DELETE BERTWEEN THESE LINES
-sidebar.removeClass('hidden-xs')
-wrapper.removeClass('sidebar-minimized main col-xs-12 sidebar-collapsed col-xs-9 col-xs-offset-3 col-md-10 col-md-offset-2')
-main.removeClass('col-xs-9 col-xs-offset-3 col-md-10 col-md-offset-2 col-xs-12 sidebar-collapsed')
+$('#main-sidebar').removeClass('hidden-xs')
+$('#wrapper').removeClass('sidebar-minimized main col-xs-12 sidebar-collapsed col-xs-9 col-xs-offset-3 col-md-10 col-md-offset-2')
+$('#main-part').removeClass('col-xs-9 col-xs-offset-3 col-md-10 col-md-offset-2 col-xs-12 sidebar-collapsed')
 // IF PORTED INTO MAIN SPREE PROJECT STOP THIS OCCURING IN MAIN SPREE JS FILES AND REMOVE THESE CLASSES FROM ERB FILES THEN DELETE BERTWEEN THESE LINES
 
             })
