@@ -128,6 +128,77 @@ div.navbar-right {
       overflow-y: scroll;
       }
 
+
+
+
+      body.sidebar-opened #sidebar-toggle span:nth-child(1) {
+        -webkit-transition: all $menu-speed ease;
+        -moz-transition: all $menu-speed ease;
+        -o-transition: all $menu-speed ease;
+        -ms-transition: all $menu-speed ease;
+        transition: all $menu-speed ease;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 10px;
+      }
+
+
+      body.sidebar-opened #sidebar-toggle span:nth-child(2) {
+        position: absolute;
+        -webkit-transition: all 200ms ;
+        -moz-transition: all 200ms ;
+        -o-transition: all 200ms ;
+        -ms-transition: all 200ms ;
+        transition: all 200ms ;
+        background-color: transparent;
+      }
+
+      body.sidebar-opened #sidebar-toggle span:nth-child(3) {
+        -webkit-transition: all $menu-speed ease;
+        -moz-transition: all $menu-speed ease;
+        -o-transition: all $menu-speed ease;
+        -ms-transition: all $menu-speed ease;
+        transition: all $menu-speed ease;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 6px;
+      }
+
+
+      #sidebar-toggle span:nth-child(1) {
+        -webkit-transition: all $menu-speed ease;
+        -moz-transition: all $menu-speed ease;
+        -o-transition: all $menu-speed ease;
+        -ms-transition: all $menu-speed ease;
+        transition: all $menu-speed ease;
+        transform: rotate(0deg);
+
+
+      }
+
+
+      #sidebar-toggle span:nth-child(2) {
+        -webkit-transition: all 200ms ;
+        -moz-transition: all 200ms ;
+        -o-transition: all 200ms ;
+        -ms-transition: all 200ms ;
+        transition: all 200ms ;
+        background-color: #555;
+
+      }
+
+      #sidebar-toggle span:nth-child(3) {
+        -webkit-transition: all $menu-speed ease;
+        -moz-transition: all $menu-speed ease;
+        -o-transition: all $menu-speed ease;
+        -ms-transition: all $menu-speed ease;
+        transition: all $menu-speed ease;
+        transform: rotate(0deg);
+
+
+      }
+
+
       #main-part {
         padding-left: 35px;
       }
