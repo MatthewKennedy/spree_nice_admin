@@ -14,16 +14,15 @@ $('#wrapper').removeClass('sidebar-minimized')
 // IF PORTED INTO MAIN SPREE PROJECT STOP THIS OCCURING IN MAIN SPREE JS FILES AND REMOVE THESE CLASSES FROM ERB FILES THEN DELETE BERTWEEN THESE LINES
 
             $('#sidebar-toggle').on('click', function () {
-
-              // Add fuctionality via toggling a class on the body, allowing you to target down with css.
-              $('body').toggleClass('sidebar-opened')
-
-              // Add body scroll lock when menu opened.
-              if ($('body').hasClass('sidebar-opened')) {
-                bodyScrollLock.disableBodyScroll('#main-sidebar');
-                }
-              else {
-                bodyScrollLock.enableBodyScroll('#main-sidebar');
+              // 1. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav).
+                var targetElement = document.querySelector("#main-sidebar");
+                $('body').toggleClass('sidebar-opened')
+                 sideMenu = $('#main-sidebar')
+                if ($('body').hasClass('sidebar-opened')) {
+                    bodyScrollLock.disableBodyScroll(targetElement);
+                  }
+                else {
+                    bodyScrollLock.enableBodyScroll(targetElement);
                 }
 
 // Blocks (removeClass) of the default Spree classes from toggling on and off.
