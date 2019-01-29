@@ -109,7 +109,7 @@ div.navbar-right {
       display: none;
       }
 
-      div.sidebar-opened div#main-sidebar {
+      body.sidebar-opened div#main-sidebar {
       display: block;
       width:  100% ;
       overflow-y: scroll;
