@@ -46,11 +46,10 @@ Just simple backend styling.
   ```
 
 3. Remove the following line from YourProject/vendor/assets/javascript/spree/backend/all.js
-  ```ruby
+  ```javascript
   //= require spree/backend/spree_nice_admin
   ```
 4. Remove the following line from YourProject/vendor/assets/stylesheets/spree/backend/all.css
-  ```ruby
+  ```css
    *= require spree/backend/spree_nice_admin
   ```
-  
