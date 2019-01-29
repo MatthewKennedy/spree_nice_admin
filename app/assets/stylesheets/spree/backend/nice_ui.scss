@@ -13,13 +13,16 @@ span#sidebar-toggle {
 }
 
 #sidebar-toggle {
-  width: 25px;
-  margin-top: 18px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin-top: 15px;
 }
 
 #main-sidebar {
   width:  $sidebar-width ;
   overflow-y: scroll;
+  top: 51px;
 }
 
 
@@ -46,11 +49,17 @@ div#content {
 .navbar-inverse .navbar-nav > li > a {
   color: #555555 !important;
 }
-.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #555555;
-}
+
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #ddd;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
   background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #555;
 }
 
 div#test p:first-child {
