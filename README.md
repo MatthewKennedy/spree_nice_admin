@@ -50,6 +50,6 @@ Just simple backend styling.
   //= require spree/backend/spree_nice_admin
   ```
 4. Remove the following line from YourProject/vendor/assets/stylesheets/spree/backend/all.css
-  ```css
+  ```
    *= require spree/backend/spree_nice_admin
   ```
