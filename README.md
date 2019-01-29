@@ -35,24 +35,24 @@ Just simple backend styling.
 
 ## Uninstalling
 
-  1. Remove this line to the bottom of your Gemfile:
-    ```ruby
-    gem 'spree_nice_admin', github: 'matthewkennedy/spree_nice_admin'
-    ```
+1. Remove this line to the bottom of your Gemfile:
+  ```ruby
+  gem 'spree_nice_admin', github: 'matthewkennedy/spree_nice_admin'
+  ```
 
-  2. Remove the gem using Bundler:
-    ```ruby
-    bundle
-    ```
+2. Remove the gem using Bundler:
+  ```ruby
+  bundle
+  ```
 
-  3. Remove the following line from YourProject/vendor/assets/javascript/spree/backend/all.js
-    ```ruby
-    //= require spree/backend/spree_nice_admin
-    ```
-  4. Remove the following line from YourProject/vendor/assets/stylesheets/spree/backend/all.css
-    ```ruby
-     *= require spree/backend/spree_nice_admin
-    ```
+3. Remove the following line from YourProject/vendor/assets/javascript/spree/backend/all.js
+  ```ruby
+  //= require spree/backend/spree_nice_admin
+  ```
+4. Remove the following line from YourProject/vendor/assets/stylesheets/spree/backend/all.css
+  ```ruby
+   *= require spree/backend/spree_nice_admin
+  ```
 
 ## Testing
 
