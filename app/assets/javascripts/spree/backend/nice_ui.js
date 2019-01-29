@@ -5,7 +5,7 @@
 
 //#### EVERYTHING BUT UP AGAINST LINE 0 CAN BE REMOVED IF PORTED INTO SPREE
     jQuery(function ($) {
-      
+
 // THESE CAN BE REMOVED IF PROTED PROPERLY
 var wrapper = $('#wrapper')
 var main = $('#main-part')
@@ -42,4 +42,11 @@ main.removeClass('col-xs-9 col-xs-offset-3 col-md-10 col-md-offset-2 col-xs-12 s
 // IF PORTED INTO MAIN SPREE PROJECT STOP THIS OCCURING IN MAIN SPREE JS FILES AND REMOVE THESE CLASSES FROM ERB FILES THEN DELETE BERTWEEN THESE LINES
 
             })
+
     })
+
+    // Remove body scroll lock if window is resized to avoid ui locked up if the mobile menu is opened and then the screen widened.
+    window.addEventListener("resize", removeLock);
+    function removeLock() {
+      bodyScrollLock.clearAllBodyScrollLocks();
+    }
