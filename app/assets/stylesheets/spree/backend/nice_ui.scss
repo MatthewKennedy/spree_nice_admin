@@ -1,4 +1,5 @@
 $sidebar-width: 210px;
+$menu-speed: 300ms;
 
 img {
   max-width: 100%;
@@ -105,13 +106,25 @@ div.navbar-right {
       .navbar-right {display: none;}
 
       div#main-sidebar {
-      width: 0 ;
-      display: none;
+      width: 100% ;
+
+      -webkit-transition: all $menu-speed ease;
+      -moz-transition: all $menu-speed ease;
+      -o-transition: all $menu-speed ease;
+      -ms-transition: all $menu-speed ease;
+      transition: all $menu-speed ease;
+      left: -100%;
       }
 
       body.sidebar-opened div#main-sidebar {
-      display: block;
       width:  100% ;
+
+      -webkit-transition: all $menu-speed ease;
+      -moz-transition: all $menu-speed ease;
+      -o-transition: all $menu-speed ease;
+      -ms-transition: all $menu-speed ease;
+      transition: all $menu-speed ease;
+      left: 0;
       overflow-y: scroll;
       }
 

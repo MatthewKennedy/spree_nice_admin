@@ -3,8 +3,9 @@
       // BODY SCROLL LOCK END
 
 
-//#### EVERYTHING BUT UP AGAINST LINE 0 CAN BE REMOVED IF PORTED INTO SPREE 
+//#### EVERYTHING BUT UP AGAINST LINE 0 CAN BE REMOVED IF PORTED INTO SPREE
     jQuery(function ($) {
+      
 // THESE CAN BE REMOVED IF PROTED PROPERLY
 var wrapper = $('#wrapper')
 var main = $('#main-part')
