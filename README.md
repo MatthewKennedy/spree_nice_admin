@@ -11,7 +11,7 @@ Adds currency to orders in list view and also adds order currency to the order d
 Because this extension uses the ```order.currency``` you may need to either be using Spree 3.7 or for older versions of spree you may need to have the spree_multiple_currency extension installed. I have not tested it with older versions of Spree.
 
 ## Changes to the JS files
-Disables the default Spree menu class toggling on the main menu, and then adds a single toggle class for the menu for use on handheld devices.
+Disables the default Spree menu class toggling on the sidebar menu, and then adds a single toggle class to the body for the sidebar-open so the CSS can do the rest.
 
 ## Changes to the CSS files
 Just simple backend styling.
@@ -53,3 +53,7 @@ Just simple backend styling.
   ```
    *= require spree/backend/spree_nice_admin
   ```
+## ToDo
+A lot more could be done, but rather than the work being done in an extension, ideally it wants to be done in the Spree main project, that way you are not chasing updates from the main admin html.erb files back into the extension.
+
+Also with the advent of the Bootstrap 4 into Spree, all this might be irrelevant. 
