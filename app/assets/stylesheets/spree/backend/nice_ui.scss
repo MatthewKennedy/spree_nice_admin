@@ -1,5 +1,9 @@
 $sidebar-width: 210px;
 $menu-speed: 300ms;
+
+$ui-background-color: #f9fafb;
+$panel-background-color: #fff;
+$nav-background-color: #fff;
 $bordercolor: #e2e2e2;
 
 img {
@@ -16,6 +20,18 @@ span#sidebar-toggle {
 
 .content-header.page-header {
   margin-top: 0;
+}
+
+.page-header {
+  padding-bottom: 0;
+}
+
+aside#sidebar {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid $bordercolor;
+  border-radius: 5px;
+  margin-right: -15px;
 }
 
 #sidebar-toggle {
@@ -37,11 +53,11 @@ span#sidebar-toggle {
 }
 
 div#main-part, div#main-sidebar, body {
-  background-color: #f9fafb;
+  background-color: $ui-background-color;
 }
 
 div#content {
-  background-color: #fff;
+  background-color: $panel-background-color;
   border: 1px solid $bordercolor;
   padding: 20px;
   border-radius: 5px;
@@ -49,7 +65,7 @@ div#content {
 }
 
 .navbar-inverse {
-  background-color: #fff;
+  background-color: $nav-background-color;
   border-color: $bordercolor;
 }
 .navbar-inverse .navbar-nav > li > a {
@@ -61,12 +77,17 @@ div#content {
 }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  background-color: #fff;
+  background-color: $nav-background-color;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #555;
 }
+
+.content-header.page-header .page-actions form {
+margin: 2px 0;
+}
+
 
 div#test p:first-child {
   text-decoration: underline;
@@ -253,4 +274,5 @@ div.navbar-right {
         margin-top: 15px;
         text-align: center;
       }
+
 }
